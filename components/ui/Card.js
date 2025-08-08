@@ -14,7 +14,7 @@ const deviceWidth = Dimensions.get('window').width;
 const styles = StyleSheet.create({
     card: {
         marginTop: deviceWidth < 380 ? 18: 8,
-        marginHorizontal: 24,
+        marginHorizontal: 15,
         borderRadius: 8,
         padding: 16,
         backgroundColor: Colors.red,

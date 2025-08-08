@@ -14,17 +14,17 @@ const deviceWidth = Dimensions.get('window').width;
 
 const styles = StyleSheet.create({
     container: {
-        borderWidth: 4,
-        borderColor: Colors.accent500,
-        padding: deviceWidth < 380 ? 12 : 24,
-        margin: deviceWidth < 380 ? 12 : 24,
+        padding: deviceWidth < 380 ? 12 : 5,
         borderRadius: 8,
         alignItems: 'center',
-        justifyContent: 'center'
+        justifyContent: 'center',
+        borderBottomWidth: 3,
+        alignSelf: 'stretch',
+        borderBottomColor: 'white',
     },
     numberText: {
-        color: Colors.accent500,
-        fontSize: deviceWidth < 380 ? 28 : 36,
-        fontFamily: 'poppins'
+        color: Colors.white,
+        fontSize: deviceWidth < 380 ? 28 : 46,
+        fontFamily: 'poppins-bold'
     }
 })

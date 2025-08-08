@@ -70,20 +70,21 @@ function GameScreen({ userNumber, onGameOver }) {
 
   let content = (
     <>
-      <NumberContainer>{currentGuess}</NumberContainer>
       <Card>
+        <NumberContainer>{currentGuess}</NumberContainer>
+        <View style={styles.line} />
         <InstructionText style={styles.instructionText}>
           Higher or lower?
         </InstructionText>
         <View style={styles.buttonsContainer}>
           <View style={styles.buttonContainer}>
             <PrimaryButton onPress={nextGuessHandler.bind(this, 'lower')}>
-              <Ionicons name="remove" size={24} color="white" />
+              <Ionicons name="remove" size={24} color="Colors.red" />
             </PrimaryButton>
           </View>
           <View style={styles.buttonContainer}>
             <PrimaryButton onPress={nextGuessHandler.bind(this, 'greater')}>
-              <Ionicons name="add" size={24} color="white" />
+              <Ionicons name="add" size={24} color="Colors.red"/>
             </PrimaryButton>
           </View>
         </View>
@@ -137,8 +138,9 @@ export default GameScreen;
 const styles = StyleSheet.create({
   screen: {
     flex: 1,
-    padding: 24,
-    alignItems: 'center'
+    alignItems: 'center',
+    justifyContent: 'center',
+    marginVertical: 100,
   },
   instructionText: {
     marginBottom: 12,
@@ -151,10 +153,15 @@ const styles = StyleSheet.create({
   },
   buttonsContainerWide: {
     flexDirection: 'row',
-    alignItems: 'center'
+    alignItems: 'center',
   },
   listContainer: {
     flex: 1,
     padding: 16,
+  },
+  line: {
+    borderBottomColor: 'white',   
+    borderBottomWidth: 1,        
+    marginVertical: 10,          
   },
 });
