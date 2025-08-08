@@ -23,16 +23,14 @@ function GameOverScreen({roundsNumber, userNumber, onStartNewGame}){
     }
 
     return (
-    <ScrollView>
         <View style={styles.rootContainer}>
-            <Title>GAME OVER!</Title>
+            <Title>GAME OVER</Title>
             <View style={[styles.imageContainer, imageStyle]}>
                 <Image style={styles.image} source={require('../assets/images/success.png')}/>
             </View>
             <Text style={styles.summaryText}>Your phone needed <Text style={styles.highlight}>{roundsNumber}</Text> rounds to guess the number <Text style={styles.highlight}>{userNumber}</Text></Text>
-            <PrimaryButton onPress={onStartNewGame}>Start New Game</PrimaryButton>
+            <PrimaryButton onPress={onStartNewGame}>New Game</PrimaryButton>
         </View>
-    </ScrollView>
     )
 }
 
@@ -43,7 +41,6 @@ export default GameOverScreen;
 const styles = StyleSheet.create({
     rootContainer: {
         flex: 1,
-        padding: 24,
         justifyContent: 'center',
         alignItems: 'center'
     },
@@ -52,7 +49,7 @@ const styles = StyleSheet.create({
         // width: deviceWidth < 380 ? 150: 300,
         // height: deviceWidth < 380 ? 150: 300,
         borderWidth: 3,
-        borderColor: Colors.primary800,
+        borderColor: Colors.red,
         overflow: 'hidden',
         margin: 40
     },
@@ -61,10 +58,15 @@ const styles = StyleSheet.create({
         height: '100%'
     },
     summaryText: {
-        fontFamily: 'open-sans',
-        fontSize: 24,
+        fontFamily: 'poppins',
+        fontSize: 20,
+        color: Colors.white,
         textAlign: 'center',
-        marginBottom: 24
+        marginBottom: 24,
+        textShadowColor: 'rgba(0, 0, 0, 0.2)',
+        textShadowOffset: { width: 2, height: 2 },
+        textShadowRadius: 1,
+        marginHorizontal: 30
     },
     highlight: {
         fontFamily: 'poppins',
