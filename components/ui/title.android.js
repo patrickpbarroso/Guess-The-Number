@@ -8,13 +8,13 @@ export default Title;
 
 const styles = StyleSheet.create({
     title: {
-        fontFamily: 'open-sans-bold',
-        fontSize: 24,
+        fontFamily: 'poppins-bold',
+        fontSize: 46,
         color: 'white',
         textAlign: 'center',
-        borderWidth: 2,
-        borderColor: 'white',
-        padding: 12,
-        maxWidth: '80%'
+        maxWidth: '80%',
+        textShadowColor: 'rgba(0, 0, 0, 0.2)',
+        textShadowOffset: { width: 2, height: 2 },
+        textShadowRadius: 1,  
     }
 })

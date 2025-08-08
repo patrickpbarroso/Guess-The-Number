@@ -67,7 +67,7 @@ const styles = StyleSheet.create({
         marginBottom: 24
     },
     highlight: {
-        fontFamily: 'open-sans-bold',
+        fontFamily: 'poppins',
         color: Colors.primary500
     }
 });

@@ -8,12 +8,10 @@ export default Title;
 
 const styles = StyleSheet.create({
     title: {
-        fontFamily: 'open-sans-bold',
-        fontSize: 24,
+        fontFamily: 'poppins-bold',
+        fontSize: 46,
         color: 'white',
         textAlign: 'center',
-        borderWidth: 0,
-        borderColor: 'white',
         padding: 12,
         maxWidth: '80%'
     }

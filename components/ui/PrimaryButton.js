@@ -26,18 +26,18 @@ export default PrimaryButton;
 
 const styles = StyleSheet.create({
     buttonOuterContainer: {
-        borderRadius: 28,
-        margin: 4,
+        borderRadius: 5,
+        margin: 2,
         overflow: 'hidden',
     },
     buttonInnerContainer: {
-        backgroundColor: Colors.primary500,
-        paddingVertical: 8,
+        backgroundColor: Colors.white,
+        paddingVertical: 12,
         paddingHorizontal: 16,
         elevation: 2
     },
     buttonText: {
-        color: 'white',
+        color: Colors.red,
         textAlign: 'center'
     },
     pressed: {

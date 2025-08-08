@@ -16,8 +16,8 @@ export default function App() {
   const [guessRounds, setGuessRounds] = useState(0)
 
   const [fontsLoaded] = useFonts({
-    'open-sans': require('./assets/fonts/OpenSans-Regular.ttf'),
-    'open-sans-bold': require('./assets/fonts/OpenSans-Bold.ttf'),
+    'poppins': require('./assets/fonts/Poppins-Regular.ttf'),
+    'poppins-bold': require('./assets/fonts/Poppins-Bold.ttf'),
   });
 
   if (!fontsLoaded){
@@ -52,7 +52,7 @@ export default function App() {
   return (
     <>
       <StatusBar style="light"/>
-      <LinearGradient colors={[Colors.primary700, Colors.accent500]} style={styles.rootScreen}>
+      <LinearGradient colors={[Colors.red, Colors.lightRed]} style={styles.rootScreen}>
           <ImageBackground 
             source={require('./assets/images/background.png')}
             resizeMode="cover"

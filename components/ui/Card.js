@@ -13,11 +13,11 @@ const deviceWidth = Dimensions.get('window').width;
 
 const styles = StyleSheet.create({
     card: {
-        marginTop: deviceWidth < 380 ? 18: 36,
+        marginTop: deviceWidth < 380 ? 18: 8,
         marginHorizontal: 24,
         borderRadius: 8,
         padding: 16,
-        backgroundColor: Colors.primary800,
+        backgroundColor: Colors.red,
         elevation: 4,
         shadowColor: 'black',
         shadowOffset: { width: 0, height: 2},
